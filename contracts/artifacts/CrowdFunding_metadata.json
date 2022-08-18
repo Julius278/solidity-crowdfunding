@@ -22,6 +22,69 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "ContributeEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateRequestEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "MakePaymentEvent",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -133,6 +196,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "makePayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -286,11 +362,11 @@
 	},
 	"sources": {
 		"contracts/crowdfunding.sol": {
-			"keccak256": "0x4c94fc9a2c026b23b3091a2f7da916d521e028253c98deb7ca2ba31d9c5bb22d",
+			"keccak256": "0x18a369b4a42e12bf68d987ad13d9223beed427812ade6d199297120a33538cfe",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7d748993d663d89e056d8e8e181db08bd1e7016c5887271694bbb3898a462630",
-				"dweb:/ipfs/QmP3Hv8mcLuQKzfYRXMMeyUV8MotPDEmi6bwzUi6qDFfbz"
+				"bzz-raw://19a491c4248fed625abfc8f8f9eb60d1db4b92ced9ba3c7f17543332e9706f2d",
+				"dweb:/ipfs/QmVDes2viSBqkYypqde6ZnPZgwjGbt2BkxTnrKekChMBWc"
 			]
 		}
 	},
