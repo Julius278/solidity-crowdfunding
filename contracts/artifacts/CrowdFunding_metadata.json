@@ -22,6 +22,29 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "addRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "admin",
 				"outputs": [
@@ -140,6 +163,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "numRequests",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "raisedAmount",
 				"outputs": [
 					{
@@ -159,8 +195,60 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "requests",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numOfVoters",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "startCampaign",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "voteRequest",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -198,11 +286,11 @@
 	},
 	"sources": {
 		"contracts/crowdfunding.sol": {
-			"keccak256": "0x209a4c357dac6a2455399f450cdeb92317ee28ffcb7bb3a721f2a33edbff348c",
+			"keccak256": "0x4c94fc9a2c026b23b3091a2f7da916d521e028253c98deb7ca2ba31d9c5bb22d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c41ba7207dfbe7deaae0fd0bd3d8bbfa1f67e4f27ce61301f7762df83792526f",
-				"dweb:/ipfs/QmaWf6QWBD9ZkbNWueqL5HgJDCAzL5giQCeiHsQkLrmeAY"
+				"bzz-raw://7d748993d663d89e056d8e8e181db08bd1e7016c5887271694bbb3898a462630",
+				"dweb:/ipfs/QmP3Hv8mcLuQKzfYRXMMeyUV8MotPDEmi6bwzUi6qDFfbz"
 			]
 		}
 	},
